@@ -1,0 +1,294 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Lato, sans-serif;
+	color: rgb(60, 60, 60);
+	line-height: 1.6;
+	text-align: center;
+	background-color: rgb(240, 240, 240);
+}
+
+h1 {
+	margin-top: .7em;
+}
+
+h3 {
+	margin-bottom: .5em;
+}
+
+h4 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(60, 60, 60);
+}
+
+img {
+	max-width: 100%
+}
+
+
+/* ---- Navigation ---- */
+
+.main-nav {
+	margin: 0;
+	padding-bottom: 1em;
+	font-weight: bold;
+}
+
+.main-nav li {
+	text-transform: uppercase;
+	width: 90%;
+	margin: .2em auto;
+	padding: .2em 0;
+	background-color: rgb(250, 250, 250);
+}
+
+.main-nav a{
+	display: block;
+}
+
+
+/* ---- Layout Containers ---- */
+
+header,
+.portfolio-content,
+.contact-content,
+.education-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	margin-top: 1em;
+	padding: 1em 0;
+	color: rgba(70, 70, 70, .75);	
+}
+
+#portfolio,
+#education,
+#contact {
+	padding: 2em 0 3em;
+}
+
+#portfolio,
+#contact,
+footer {
+	background-color: rgb(250, 250 ,250);	
+}
+
+
+/* ---- Page Elements ---- */
+
+header img {
+	width: 80%;
+	box-shadow: 0 0 2px;
+}
+
+.portfolio-content li {
+	padding: 2em 0;
+    border-bottom: 1px solid rgba(70, 70, 70, .5);
+}
+
+.portfolio-content p {
+	font-weight: lighter;
+	margin-top: -.2em;
+}
+
+.portfolio-content li:nth-last-child(1) {
+	border: none;
+}
+
+.education-content {
+	font-weight: lighter;
+}
+
+.contact-content p,
+.contact-content li{
+	color: rgba(70, 70, 70, .75);
+}
+
+.footer-container {
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid rgba(70, 70, 70, .50);
+}
+
+footer p {
+	float: left;
+}
+
+.footer-content {
+	float: right;
+	margin-top: 1em;
+}
+
+.rest {								/* hides the footer links to anchors */
+	display: none;
+}	
+
+
+/* ----- Float Clearfix ----- */
+.cf::after {
+	content: "";
+	display: table;
+	clear: both;		
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media screen and (min-width: 768px) {
+	
+	body {
+		font-size: 1.1em;
+	}
+	
+	/* ----- Navigation ----- */
+	
+	.main-nav li {
+		width: 25%;
+		background-color: transparent;
+		float: left;
+	}
+	
+    .main-nav ul {
+        width: 80%;
+        margin: 0 auto;
+    }
+	
+    /* ----- Layout Containers ----- */
+    
+    #portfolio {
+        margin: 2em auto 0;
+    }
+    
+	/* ----- Page Elements ----- */
+
+		
+	.profile-info {
+		float: left;
+		text-align: left;
+		width: 60%;
+		padding-right: 1.2em;
+		margin-top: -.2em;
+		font-size: 1.2em;
+	}
+	
+	.profile-image {
+		float: right;
+		width: 40%;
+	}
+		
+	.portfolio-content li {
+		width: 50%;
+		padding: 2em 1%;
+		float: left;
+        border: none;
+	}
+	
+    .portfolio-content li:nth-child(odd) {
+        clear: left;
+    }
+    
+    .portfolio-content p {
+        width: 95%;
+        margin: 0 auto;
+    }
+	
+	.contact-content {
+		width: 70%;
+		font-size: 1.2em;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	.rest {
+		display: block;
+	}
+	
+	.rest li{
+		float: left;
+		margin-left: 1em;
+	}
+	
+}
+
+
+@media screen and (min-width: 1024px) {
+    
+    body {
+        font-size: 1.2em;
+    }
+    
+    
+    /* ----- Navigation ----- */
+   
+    .main-nav h1 {
+        float: left;
+        margin-left: 5%; 
+        width: 30%;
+        text-align: left;
+    }
+    
+    .main-nav ul {
+        float: left;
+        width: 65%;
+        margin: 2em 0 0 0;
+        text-align: right;
+        padding-right: 5%;
+    }
+    
+    
+    /* ----- Layout Containers ----- */
+    
+    #portfolio,
+    .footer-container {
+        width: 95%;
+    }
+    
+    
+    /* ----- Page Elements ----- */
+    
+    .portfolio-content li:nth-child(odd) {
+        clear: none;
+    }
+    
+    .portfolio-content {
+        width: 95%;
+    }
+    
+    .portfolio-content li {
+        width: 33.333%;
+    }
+    
+    .portfolio-content li p {
+        font-size: .9em;
+        height: 5em;
+    }
+    
+    .education-content li {
+        float: left;
+        width: 30%;
+        padding: 0 1%;
+    }
+    
+    .education-content li:nth-child(2) {
+        width: 40%;
+    }
+    
+}
+
