@@ -1,0 +1,86 @@
+header{
+	.profile-image {
+		width: 80%;
+		box-shadow: 0 0 2px;
+		
+		@include profile-image_mq();
+	}
+	
+	.profile-info {
+		@include profile-info_mq();
+	}
+	
+	@include header_mq();
+}
+
+.portfolio-content {
+	@extend %width-center;
+	
+	li {
+		@extend %b-border;
+		
+		padding: 2em 0;
+		
+		&:nth-last-child(1) {
+			border: none;
+		}
+	
+		p {
+			font-weight: lighter;
+			margin-top: -.5em;
+		}
+		
+		@include portfolio-content-li_mq();
+	}
+	
+	@include portfolio-content_mq();
+	@include set-size_widemq();
+}
+
+.education-content {
+	@extend %width-center;
+	
+	font-weight: lighter;
+	
+	h4 {
+		margin-bottom: -.1em;
+	}
+	
+	@include education-content_mq();
+}
+
+.contact-content {
+	@extend %width-center;
+	
+	color: $color-text-light;
+	
+	@include contact-content_mq();
+}
+
+.footer-content {
+	@extend %width-center;
+	@extend %t-border;
+	@extend %flexbox;	
+	
+	flex-direction: row;
+	justify-content: space-between;
+	
+	p {
+		flex: 1;
+		text-align: left;
+	}
+	.rest {
+		display: none;
+		
+		@include footer-rest_mq();
+	}
+	
+	.mobile {
+		height: 100%;
+		margin-top: 1em;
+	
+		@include footer-mobile_mq();
+	}
+	
+	@include set-size_widemq();
+}

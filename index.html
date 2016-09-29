@@ -7,14 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 		<link rel="stylesheet" href="css/normalize.css">																					
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">		
-		<link rel="stylesheet" href="css/styles.css">		
+		<link rel="stylesheet" href="css/application.css">		
 	</head>
 	
 	<body>
 
-		<div id="top" class="main-nav cf">
+		<div id="top" class="main-nav">
 			<h1>Efe Atli</h1>
-			<ul class="cf">
+			<ul class="nav-bar">
 				<li><a href="#top">Home</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#education">Education</a></li>
@@ -22,14 +22,14 @@
 			</ul>
 		</div>
 	
-		<header class="cf">
+		<header>
 			<img src="img/profile.jpeg" alt="Profile Pic of Efe Atli" class="profile-image">
 			<p class="profile-info">Hello! I'm a front-end developer who just loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use.</p>
 		</header>
 		
 		<div id="portfolio">
 			<h2>Portfolio</h2>
-			<ul class="portfolio-content cf">
+			<ul class="portfolio-content">
 				<li>
 					<img src="img/portfolio-1.png" alt="Marketing Page">
 					<h3>Marketing Page</h3>
@@ -95,7 +95,7 @@
 		
 		<div id="education">
 			<h2>Education</h2>
-			<ul class="education-content cf">
+			<ul class="education-content">
 				<li><h4>Istanbul Technical University</h4>Naval & Ocean Tech. Engineering</li>
 				<li><h4>Istanbul MSA (Culinary Arts Academy)</h4>Profesional Commis Chef Degree</li>
 				<li><h4>Treehouse</h4>Frond-End Developer Techdegree</li>
@@ -115,21 +115,16 @@
 		</div>						<!-- contact content div -->
         
 		<footer>
-			<div class="footer-container cf">
+			<div class="footer-content">
 				<p>Efe Atli</p>
-				<div class="footer-content mobile">
-					<a href="#top">Back To Top</a>
-				</div>				<!-- footer-content 320 div -->
-
-				<div class="footer-content rest">
-					<ul>
-						<li><a href="#top">Home</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#education">Education</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>				<!-- footer-content rest div -->
-			</div>   				<!-- footer-container div -->
+				<a class="mobile" href="#top">Back To Top</a>
+				<ul class="rest">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
 		</footer>
 		
 	</body>

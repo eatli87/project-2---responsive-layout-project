@@ -1,0 +1,28 @@
+/* Base Element Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $stack-lato;
+	font-size: $size-mobile;
+	color: $color-text-base;
+	line-height: 1.6;
+	text-align: center;
+	background-color: $color-prim;
+
+	@include body_mq();
+}
+
+a {
+	text-decoration: none;
+	color: $color-link;
+	&:hover {
+		color: rgba($color-link, 0.5);
+	}
+}
+
+img {
+	max-width: 100%
+}

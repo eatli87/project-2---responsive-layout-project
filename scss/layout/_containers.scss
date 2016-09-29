@@ -1,0 +1,28 @@
+header {
+	@extend %width-center;
+	@extend %pad-tb;
+	
+	margin-top: 1em;
+	color: rgba($color-text-light, .75);
+}
+
+#portfolio {
+	@extend %pad-tb;
+	background-color: $color-sec;
+	
+	@include set-size_widemq();
+}
+
+#education {
+	@extend %pad-tb;
+}
+
+#contact {
+	@extend %pad-tb;
+	
+	background-color: $color-sec;
+}
+
+footer {
+	background-color: $color-sec;
+}

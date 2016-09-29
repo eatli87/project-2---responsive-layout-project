@@ -1,0 +1,32 @@
+// Descriptive Color Variables
+
+$white						: rgb(250, 250, 250);
+$light-grey				: darken($white, 6%);
+$black						: rgb(60, 60, 60);
+$dark-grey				: lighten($black, 25%);
+
+// Functional Color Variables
+
+$color-prim				: $light-grey;
+$color-sec				: $white;
+
+$color-text-light	: $dark-grey;
+$color-text-base	: $black;
+
+$color-link				: $black;
+
+$color-border 		: rgba($dark-grey, 0.5);
+
+// Font stack
+
+$stack-lato 			: Lato, sans-serif;
+
+// Font Size
+$size-mobile			: 16px;
+$size-tablet			: 1.1em;
+$size-desktop			: 1.2em;
+
+// Media query breakpoints
+
+$brk-narrow : '(min-width: 768px)';
+$brk-wide   : '(min-width: 1024px)';

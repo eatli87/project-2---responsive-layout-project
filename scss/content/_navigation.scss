@@ -1,0 +1,27 @@
+/* ---- Navigation ---- */
+
+.main-nav {
+	@extend %flexbox;
+	@extend %width-center;
+	flex-direction: column;
+	
+	@include mainnav_mq();
+	
+	li {
+		text-transform: uppercase;
+		margin: .2em auto;
+		padding: .2em 0;
+		background-color: $color-sec;
+		
+		@include mainnav_li_mq();
+		
+	}
+	
+	h1 {
+		@include mainnav_h1_mq();
+	}
+	
+	.nav-bar{
+		@include navbar_mq();	
+	}	
+}

@@ -1,0 +1,22 @@
+%width-center {
+	width: 90%;
+	margin: 0 auto;
+}
+
+%pad-tb {
+	padding: 1em 0 1.5em;
+}
+
+%b-border {
+	border-bottom: 1px solid $color-border;
+}
+
+%t-border {
+	border-top: 1px solid $color-border;
+}
+
+%flexbox {
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+}

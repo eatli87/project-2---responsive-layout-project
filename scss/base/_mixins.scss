@@ -1,0 +1,145 @@
+//Container Mixins
+@mixin set-size_widemq() {
+	@media #{$brk-wide} {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+// Navigation Bar Mixins
+
+@mixin navbar_mq() {
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;			
+	}
+		
+	@media #{$brk-wide} {
+		flex: 1.2;
+		margin-top: 1.5em;
+		font-size: 1.2em;
+	}
+}
+
+@mixin mainnav_mq() {
+	@media #{$brk-wide}	{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@mixin mainnav_h1_mq() {
+	@media #{$brk-wide} {
+		flex: 1;
+		text-align: left;
+	}
+}
+
+@mixin mainnav_li_mq() {
+	@media #{$brk-narrow} {
+		background-color: transparent;
+	}
+}
+
+
+//Base Elements Mixins
+
+@mixin body_mq() {
+	@media #{$brk-narrow} {
+		font-size: $size-tablet;
+	}
+	
+	@media #{$brk-wide} {
+		font-size: $size-desktop;
+	}
+}
+
+
+
+//====================
+//Page Elements Mixins
+//====================
+
+
+//Header (Profile)
+@mixin header_mq() {
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row-reverse;
+		text-align: left;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+
+@mixin profile-image_mq() {
+	@media #{$brk-narrow} {
+		width: 40%;
+	}
+}
+
+@mixin profile-info_mq() {
+	@media #{$brk-narrow} {
+		margin-top: -.2em;
+		padding-right: 1em;
+	}
+}
+
+//Portfolio
+@mixin portfolio-content_mq() {
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+@mixin portfolio-content-li_mq() {
+	@media #{$brk-narrow} {
+		width: 49%;
+		border: none;
+		padding: 1em 0;
+	}
+	
+	@media #{$brk-wide} {
+		width: 32%;
+		font-size: 0.9em;
+	}
+}
+
+//Education
+@mixin education-content_mq() {
+	@media #{$brk-wide} {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+//Contact
+@mixin contact-content_mq() {
+	@media #{$brk-narrow} {
+		width: 70%;
+		font-size: 1.2em;
+	}
+}
+
+
+//Footer
+@mixin footer-rest_mq() {
+	@media #{$brk-narrow} {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		flex: 1;
+	}
+}
+
+@mixin footer-mobile_mq() {
+	@media #{$brk-narrow} {
+		display: none;
+	}
+}
