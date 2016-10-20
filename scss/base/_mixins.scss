@@ -18,7 +18,7 @@
 	@media #{$brk-wide} {
 		flex: 1.2;
 		margin-top: 1.5em;
-		font-size: 1.2em;
+		font-size: $size-desktop;
 	}
 }
 
@@ -105,7 +105,7 @@
 	
 	@media #{$brk-wide} {
 		width: 32%;
-		font-size: 0.9em;
+		font-size: $size-small;
 	}
 }
 
@@ -122,7 +122,7 @@
 @mixin contact-content_mq() {
 	@media #{$brk-narrow} {
 		width: 70%;
-		font-size: 1.2em;
+		font-size: $size-desktop;
 	}
 }
 

@@ -19,7 +19,7 @@ a {
 	text-decoration: none;
 	color: $color-link;
 	&:hover {
-		color: rgba($color-link, 0.5);
+		color: $color-link-trans;
 	}
 }
 

@@ -3,7 +3,7 @@ header {
 	@extend %pad-tb;
 	
 	margin-top: 1em;
-	color: rgba($color-text-light, .75);
+	color: $color-text-trans;
 }
 
 #portfolio {
